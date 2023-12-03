@@ -34,7 +34,7 @@ VALUES ('1', 'Teste1', 'Conteúdo do Post 1', 15, 5, (DATETIME('now','localtime'
 
 SELECT * FROM posts;
 
-CREATE TABLE likes_dislikes (
+CREATE TABLE likes_dislikes(
     user_id TEXT NOT NULL REFERENCES users (id),
     post_id TEXT NOT NULL REFERENCES posts (id),
     like INTEGER NOT NULL,
